@@ -1,3 +1,12 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -12,14 +21,40 @@ a {
 }
 ul, ol {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.container {
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1440px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 .navigation {
+    display: flex;
+    gap: 76px;
+    margin-left: 156px;
     text-transform: capitalize;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+}
+.navigation-list {
+    display: flex;
+    gap: 40px;
 }
 .logo {
     color: #4d5ae5;
@@ -41,8 +76,17 @@ ul, ol {
     letter-spacing: 0.02em;
     font-style: normal;
 }
+.contacts-list {
+    display: flex;
+    gap: 40px;
+    margin-right: 156px;
+}
 .contacts-link:hover, .contacts-link:focus {
     color: #404bbf;
+}
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .main-title {
     font-weight: 700;
@@ -51,9 +95,22 @@ ul, ol {
     letter-spacing: 0.02em;
     text-align: center;
     color: #FFFFFF;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    
+    
 }
 .first-section {
     background-color: #2e2f42;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 .first-section-button {
     font-family: "Roboto", sans-serif;
@@ -64,9 +121,23 @@ ul, ol {
     background-color: #4d5ae5;
     color: #FFFFFF;
     cursor: pointer;
+    padding: 16px 32px;
+    width: 169hug;
 }
 .first-section-button:hover, .first-section-button:focus {
     background-color: #404bbf;
+}
+.second-section-main-title {
+    display: none;
+}
+.second-section-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    max-width: 1128px;
+    margin-right: auto;
+    margin-left: auto;
+    
 }
 .second-section-title {
     color: #2e2f42;
@@ -74,6 +145,7 @@ ul, ol {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .second-section-text {
     line-height: 1.5;
@@ -81,6 +153,11 @@ ul, ol {
 }
 .third-section {
     background-color: #f4f4fd;
+}
+.third-section-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
 }
 .third-section-card {
     background-color: #FFFFFF;
@@ -93,6 +170,10 @@ ul, ol {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+.third-section-photo {
+    margin-bottom: 32px;
 }
 .third-section-name {
     color: #2e2f42;
@@ -101,11 +182,13 @@ ul, ol {
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 8px;
 }
 .third-section-post {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    margin-bottom: 32px;
 }
 .fourth-section-title {
     color: #2e2f42;
@@ -115,6 +198,17 @@ ul, ol {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+.fourth-section-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 48px;
+    justify-content: center;
+}
+.fourth-section-item {
+    max-width: calc((100% - 48px) / 3);
 }
 .fourth-section-name {
     color: #2e2f42;
@@ -122,13 +216,19 @@ ul, ol {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 .fourth-section-description {
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 32px;
 }
 .footer {
     background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 156px;
 }
 .logo-white {
     color: #f4f4fd;
@@ -137,4 +237,6 @@ ul, ol {
     color: #f4f4fd;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
+    margin-top: 16px;
 }
