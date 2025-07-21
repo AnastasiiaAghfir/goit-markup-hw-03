@@ -88,9 +88,9 @@ img {
 .contacts-link:hover, .contacts-link:focus {
     color: #404bbf;
 }
-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+.first-section {
+    background-color: #2e2f42;
+    padding: 188px 0;
 }
 .main-title {
     font-weight: 700;
@@ -103,18 +103,6 @@ section {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
-    
-    
-}
-.first-section {
-    background-color: #2e2f42;
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
 }
 .first-section-button {
     font-family: "Roboto", sans-serif;
@@ -125,8 +113,13 @@ section {
     background-color: #4d5ae5;
     color: #FFFFFF;
     cursor: pointer;
-    padding: 16px 32px;
-    width: 169hug;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 .first-section-button:hover, .first-section-button:focus {
     background-color: #404bbf;
