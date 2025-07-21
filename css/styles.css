@@ -57,6 +57,9 @@ img {
 .navigation-list {
     display: flex;
     gap: 40px;
+    
+}
+.navigation-list-item {
     padding: 24px 0;
 }
 .logo-header {
